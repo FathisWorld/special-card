@@ -1,0 +1,130 @@
+:root{
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 555px;
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 15px 5px hsl(0deg 0% 0% / 30%);
+    border-radius: 10px;
+}
+.container .main{
+    width: 280px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.container .main-con{
+    width: 280px;
+    transition: .3s;
+    display: flex;
+    cursor: pointer;
+}
+.container .main-con:hover .main-2{
+    display: flex;
+    filter: blur(.5px);
+    width: 290px;
+}
+.container .main-con:hover .main{
+    display: none;
+}
+.container .main-2{
+    display: none;
+    transition: .3s;
+    border-radius: 10px;
+}
+.container .main-con:hover .icon{
+    position: absolute;
+    top: 24%;
+    left: 44%;
+    display: flex;
+    z-index: 1;
+}
+.container .icon{
+    display: none;
+}
+.container .main-h{
+    font-weight: 600;
+    align-self: start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    padding-left: 15px;
+    transition: .3s;
+}
+.container .main-h:hover{
+    color: hsl(178, 100%, 50%);
+}
+.container .main-h span{
+    padding-left: 7px;
+}
+.container .main-p{
+    padding-left: 15px;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+
+.time{
+    display: flex;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: hsl(215, 51%, 70%);
+}
+.time img{
+    position: relative;
+    top: 3px;
+}
+.time .d-2{
+    padding-left: 100px;
+}
+.time .d-1{
+    color: hsl(178, 100%, 50%);
+}
+.container hr{
+    width: 280px;
+    border-color: hsl(215, 51%, 70%);
+}
+.footer{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.footer img{
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+}
+.footer p{
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+.footer p span{
+    color: hsl(0, 0%, 100%);
+    padding-left: 6px;
+    font-weight: 400;
+    transition: .3s;
+}
+.footer p span:hover{
+    color: hsl(178, 100%, 50%);
+}
